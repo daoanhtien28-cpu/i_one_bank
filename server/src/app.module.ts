@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import databaseConfig from './config/database.config';
 import { AuthModule } from './auth/auth.module';
+import { BankAccountsModule } from './bank-accounts/bank-accounts.module';
 import { BanksModule } from './banks/banks.module';
 import { RecentTransactionsModule } from './recent-transactions/recent-transactions.module';
 import { TransactionsModule } from './transactions/transactions.module';
@@ -36,6 +37,7 @@ import { WalletsModule } from './wallets/wallets.module';
     AuthModule,
     WalletsModule,
     BanksModule,
+    BankAccountsModule,
     TransactionsModule,
     RecentTransactionsModule,
   ],
